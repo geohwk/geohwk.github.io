@@ -102,7 +102,7 @@
 <body>
 
   <header>
-    <img src="your-photo.jpg" alt="George Hawkins" class="profile-pic" />
+    <img src="your-photo.jpeg" alt="George Hawkins" class="profile-pic" />
     <h1>George Hawkins</h1>
     <h2>Software Engineer</h2>
     <nav>
