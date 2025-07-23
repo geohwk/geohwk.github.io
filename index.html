@@ -9,7 +9,7 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #001f26; /* darker monotone background */
+      background-color: #001f26;
       color: white;
       display: flex;
       flex-direction: column;
@@ -50,17 +50,31 @@
 
     nav a {
       margin: 6px 0;
-      color: #80e5ff;
-      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 6px;
       font-size: 1.1rem;
+      text-decoration: none;
+      color: white;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 200px;
     }
 
     nav a i {
       margin-right: 8px;
     }
 
+    nav a.linkedin {
+      background-color: #0077b5;
+    }
+
+    nav a.github {
+      background-color: #171515;
+    }
+
     nav a:hover {
-      text-decoration: underline;
+      filter: brightness(1.1);
     }
 
     section.extras {
@@ -86,30 +100,45 @@
     }
 
     section.extras a {
-      color: #80e5ff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 20px;
+      border-radius: 6px;
+      color: white;
       text-decoration: none;
+      min-width: 200px;
     }
 
     section.extras a i {
       margin-right: 8px;
     }
 
+    section.extras a.youtube {
+      background-color: #ff0000;
+    }
+
+    section.extras a.lego {
+      background-color: #f4c20d;
+      color: #000;
+    }
+
     section.extras a:hover {
-      text-decoration: underline;
+      filter: brightness(1.1);
     }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="your-photo.jpeg" alt="George Hawkins" class="profile-pic" />
+    <img src="your-photo.jpg" alt="George Hawkins" class="profile-pic" />
     <h1>George Hawkins</h1>
     <h2>Software Engineer</h2>
     <nav>
-      <a href="https://uk.linkedin.com/in/george-hawkins-637a7b9a" target="_blank">
+      <a href="https://uk.linkedin.com/in/george-hawkins-637a7b9a" class="linkedin" target="_blank">
         <i class="fab fa-linkedin"></i>LinkedIn
       </a>
-      <a href="https://github.com/geohwk" target="_blank">
+      <a href="https://github.com/geohwk" class="github" target="_blank">
         <i class="fab fa-github"></i>GitHub
       </a>
     </nav>
@@ -118,8 +147,8 @@
   <section class="extras">
     <h3>Extras</h3>
     <ul>
-      <li><a href="https://www.youtube.com/@albiorix98" target="_blank"><i class="fab fa-youtube"></i>Stopmotion</a></li>
-      <li><a href="https://rebrickable.com/users/albiorix/" target="_blank"><i class="fas fa-cubes"></i>Lego Instructions</a></li>
+      <li><a href="https://www.youtube.com/@albiorix98" class="youtube" target="_blank"><i class="fab fa-youtube"></i>Stopmotion</a></li>
+      <li><a href="https://rebrickable.com/users/albiorix/" class="lego" target="_blank"><i class="fas fa-cubes"></i>Lego Instructions</a></li>
     </ul>
   </section>
 
